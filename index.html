@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Dropdown Menu | Coderider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="dropdown">
+    <input type="checkbox" id="dropdown">
+
+    <label class="dropdown__face" for="dropdown">
+      <div class="dropdown__text">Dropdown</div>
+
+      <div class="dropdown__arrow"></div>
+    </label>
+    <ul class="dropdown__items">
+      <li>🙂</li>
+      <li>😺</li>
+      <li>😽</li>
+      <li>😎</li>
+      <li>🤗</li>
+    </ul>
+  </div>
+  <svg>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+  </svg>
+</body>
+
+</html>
